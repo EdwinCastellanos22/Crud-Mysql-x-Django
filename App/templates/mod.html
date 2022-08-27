@@ -1,0 +1,27 @@
+{% extends 'main.html' %}
+
+{% block title %} Modificar {% endblock %}
+
+{% block content %}
+
+    <form action="" method="post">
+        
+    <label for="id" class="form-label">ID</label>
+    <input type="number" name="id" id="id" value="dato.id" readonly class="form-control">
+
+    <label for="name" class="form-label">Nombre</label>
+    <input type="text" name="name" id="name" value="dato.nombre" class="form-control">
+
+    <label for="apel" class="form-label">Apellido</label>
+    <input type="text" name="ape" id="apel" value="dato.apellido" class="form-control">
+
+    <label for="tel" class="form-label">Telefono</label>
+    <input type="text" name="tel" id="tel" value="dato.telefono" class="form-control">
+
+    <button type="submit">Guardar</button>
+    
+    
+    
+    </form>
+
+{% endblock %}
